@@ -1,0 +1,30 @@
+Test cases covered (22):
+
+NEGATIVE - Number validation:
+        1) More characters after j in string are being detected as invalid
+        2) String ending in more than 1 j is being detected as invalid
+        3) Randomly placed js are being detected as invalid
+        4) Double - sign is being detected as invalid
+        5) Double + sign is being detected as invalid
+        6) Starting with letter is being detected as invalid
+        7) Real numbers are not allowed
+        8) Generic string not allowed
+        9) Empty string not allowed
+        10)Special characters not allowed
+
+
+POSITIVE - Batch
+        1)Adding a batch of 5 strings
+        2)Adding a batch of 7 strings
+        3)multiplying a batch of 5 strings
+        4)multiplying a batch of 6 strings
+
+POSITIVE - Standard
+         1)Adding two strings
+         2)Adding three strings
+         3)Subtracting two strings resulting in negative result
+         4)Subtracting two strings
+         5)Multiplying two strings
+         6)Multiplying three strings
+         7)Dividing two strings resulting in negative integer
+         8)Dividing two strings resulting in positive float

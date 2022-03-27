@@ -1,0 +1,13 @@
+
+__pycache__/im_numbers.cpython-39.pyc
+__pycache__/simple_complex.cpython-39.pyc
+__pycache__/simple_complex_batch.cpython-39.pyc
+__pycache__/simple_complex_set.cpython-39.pyc
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/imag_library.iml
+Tests/__pycache__/test_number_validation.cpython-39.pyc
+Tests/__pycache__/test_simple_batch_complex.cpython-39.pyc
+Tests/__pycache__/test_simple_complex.cpython-39.pyc
