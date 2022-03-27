@@ -23,7 +23,7 @@ class TestSimpleComplex(TestCase):
         self.assertEqual("-7j", res)
 
     def test_sub_two_different_values_second(self):
-        """This class validates subtracting two strings"""
+        """This class validates capital "J" accepted"""
         res = self.my_complex.sub_complex("5j", "2j")
         self.assertEqual("3j", res)
 

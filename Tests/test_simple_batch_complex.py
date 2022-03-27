@@ -30,3 +30,9 @@ class TestSimpleComplex(TestCase):
         list_of_nums = ["-2j", "-7j", "-3j", "5j", "-10j", "2j"]
         res = self.my_complex_batch.multiple_complex_list(list_of_nums)
         self.assertEqual("4200j", res)
+
+    def test_mult_batch_tuple(self):
+        """This class validates tuple can be parsed"""
+        list_of_nums = ("-2j", "-7j", "-3j", "5j", "-10j", "2j")
+        res = self.my_complex_batch.multiple_complex_list(list_of_nums)
+        self.assertEqual("4200j", res)

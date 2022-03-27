@@ -6,6 +6,8 @@ class SimpleComplexBatch(SimpleComplexSet):  # Same as simple_complex but will a
     def add_complex_list(self, numbers_entered: list) -> str:
         """Accepts list of strings and returns sum of list in string."""
 
+        numbers_entered = [x.lower() for x in numbers_entered] # Validation accepts only lower J. Hence making sure
+
         self._validate_inputs(numbers_entered)  # Make sure valid input
         normal_numbers = self._prepare_numbers(numbers_entered)  # Will convert string to numbers for operations
 
@@ -17,6 +19,8 @@ class SimpleComplexBatch(SimpleComplexSet):  # Same as simple_complex but will a
 
     def multiple_complex_list(self, numbers_entered: list) -> str:
         """Accepts list of strings and returns product of list in string."""
+
+        numbers_entered = [x.lower() for x in numbers_entered]
 
         self._validate_inputs(numbers_entered)  # Make sure valid input
         normal_numbers = self._prepare_numbers(numbers_entered)  # substract numbers together

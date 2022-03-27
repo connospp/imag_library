@@ -11,12 +11,12 @@ class TestingComplex:
     def project_for_complex(self):  # Testing library
 
         ###EXAMPLE###
-        print(self.my_complex.add_complex("j", "-5j"))
+        print(self.my_complex.add_complex("J", "-5j"))
         print(self.my_complex.sub_complex("-5j", "-8j"))
         print(self.my_complex.multiple_complex("-5j", "-8j", "-j"))
         print(self.my_complex.divide_complex("-5j", "-8j"))
 
-        print(self.my_complex_batch.add_complex_list(["3j", "2j", "-3j"]))
+        print(self.my_complex_batch.add_complex_list(["3J", "2j", "-3j"]))
         print(self.my_complex_batch.multiple_complex_list(["1j", "3j", "3j", "4j"]))
         ###########
 

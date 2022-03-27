@@ -6,7 +6,7 @@ class SimpleComplex(SimpleComplexSet):
     def add_complex(self, first_num: str, second_num: str,third_num: str = "0j") -> str:
         """Accepts 2-3 strings and returns sum in string."""
 
-        numbers_entered = [first_num, second_num, third_num]  # Places strings into list
+        numbers_entered = [first_num.lower(), second_num.lower(), third_num.lower()]  # Places strings into list and make sure they are low() to pass validation
         self._validate_inputs(numbers_entered)  # Make sure valid input
         normal_numbers = self._prepare_numbers(numbers_entered)  # Will convert string to numbers for operations
 
@@ -19,7 +19,7 @@ class SimpleComplex(SimpleComplexSet):
     def sub_complex(self, first_num=str, second_num=str) -> str:
         """Accepts 2 strings and returns the difference in string."""
 
-        numbers_entered = [first_num, second_num]  # Places strings into list
+        numbers_entered = [first_num.lower(), second_num.lower()]   # Places strings into list and make sure they are low() to pass validation
         self._validate_inputs(numbers_entered)  # Make sure valid input
         normal_numbers = self._prepare_numbers(numbers_entered)  # Will convert string to numbers for operations
 
@@ -34,7 +34,7 @@ class SimpleComplex(SimpleComplexSet):
     def multiple_complex(self, first_num=str, second_num=str, third_num: str = "j") -> str:
         """Accepts 2-3 strings and returns string. Execution is first/second."""
 
-        numbers_entered = [first_num, second_num, third_num]  # Places strings into list
+        numbers_entered = [first_num.lower(), second_num.lower(), third_num.lower()]   # Places strings into list and make sure they are low() to pass validation
         self._validate_inputs(numbers_entered)  # Make sure valid input
         normal_numbers = self._prepare_numbers(numbers_entered)  # Will convert string to numbers for operations
 
@@ -49,7 +49,7 @@ class SimpleComplex(SimpleComplexSet):
     def divide_complex(self, first_num=str, second_num=str) -> str:
         """Accepts 2 strings and returns the quotient in string."""
 
-        numbers_entered = [first_num, second_num] # Places strings into list
+        numbers_entered = [first_num.lower(), second_num.lower()] # Places strings into list and make sure they are low() to pass validation
         self._validate_inputs(numbers_entered) # Make sure valid input
         normal_numbers = self._prepare_numbers(numbers_entered) # Will convert string to numbers for operations
 
